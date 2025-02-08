@@ -52,13 +52,13 @@ int main()
     while (true) {
 
         // Move de 0 até 180 graus
-        for(i=(float)degree_0;i<(float)degree_180;i+=change_value) {
+        for(i=degree_0;i<degree_180;i+=change_value) {
             pwm_set_gpio_level(PWM_pin, (uint16_t)i); // Atualiza o nível PWM
             sleep_ms(10);                             // Atraso de de ajuste 10 ms
         }
 
         // Move de 180 até 0 graus
-        for(i=(float)degree_180;i>(float)degree_0;i-=change_value) {
+        for(i=degree_180;i>degree_0;i-=change_value) {
             pwm_set_gpio_level(PWM_pin, (uint16_t)i); // Atualiza o nível PWM
             sleep_ms(10);                             // Atraso de ajuste de 10 ms
         }
