@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "author": "Gabriel Cavalcanti Coelho",
+    "editor": "wokwi",
+    "parts": [
+      {
+        "type": "board-pi-pico-w",
+        "id": "pico",
+        "top": -12.85,
+        "left": -6.05,
+        "attrs": { "builder": "pico-sdk" }
+      },
+      { "type": "wokwi-servo", "id": "servo1", "top": 36.4, "left": 96, "attrs": {} }
+    ],
+    "connections": [
+      [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+      [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+      [ "pico:GP22", "servo1:PWM", "orange", [ "h0" ] ],
+      [ "pico:GND.8", "servo1:GND", "#8f4814", [ "h19.51", "v67.2" ] ],
+      [ "pico:3V3", "servo1:V+", "red", [ "h9.91", "v57.6" ] ]
+    ],
+    "dependencies": {}
+  }
