@@ -1,6 +1,6 @@
 # Tarefa do EmbarcaTech para Controle de Servomotor com Raspberry Pi Pico W
   - **Desenvolvedor:** <ins>Gabriel Cavalcanti Coelho</ins>;
-  - **Vídeo:** [YouTube](https://www.youtube.com/).
+  - **Vídeo:** [YouTube](https://youtu.be/JP57l_HP9oQ?si=sD9WghMILiYSdXGp).
 
 ### Este projeto implementa o controle de um servomotor utilizando PWM no Raspberry Pi Pico W. O código configura o PWM para operar com uma frequência próxima a 50 Hz e permite o controle da posição do servomotor, variando entre 0 e 180 graus.
 
